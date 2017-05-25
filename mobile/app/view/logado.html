@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../view/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+</head>
+<body>
+
+	<div class="jumbotron text-center">
+	  	<div class="container">
+	 		<h1>Seja bem-vindo!</h1><br/>
+		</div>
+	</div>
+
+	<div class="panel panel-default" style="padding: 1px;">
+	  	<div class="panel-heading"><h3><center>Informe seu CEP:</center></h3></div>
+	  	<div class="panel-body">
+	  		<div class="form-group">
+  				<input type="numeric" class="form-control" id="cep" placeholder="1234567">
+			</div>
+	  	</div>
+	</div>
+	
+
+<center><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="consultaCep() ">BUSCAR</button></center>
+
+<br/><br/><br/>
+
+<div id="myModal" class="modal fade" role="dialog">
+  	<div class="modal-dialog">
+
+	    <div class="modal-content">
+		      	<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title"><center><h4>Seu endereço</h4></center></h4>
+		      	</div>
+
+		      	<div class="modal-body">
+		        	<div class="form-group">
+  						Logradouro: <input type="text" class="form-control" id="logr" value="">
+  						Bairro: <input type="text" class="form-control" id="bairro" value="">
+  						Localidade: <input type="text" class="form-control" id="loc" value="">
+  						Estado: <input type="text" class="form-control" id="est" value="">
+
+					</div>
+		      	</div>
+
+		      	<div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+		      	</div>
+	    </div>
+
+  	</div>
+</div> 
+
+
+
+    <footer class="footer">
+      <div class="container">
+      	<center><button type="button" class="btn btn-success" onclick="sair()">Sair</button></center>
+      	<br/>
+        <center><p class="text-muted">Feito por Maycon de Moraes.</p></center>
+      </div>
+    </footer>
+
+
+	<!-- LINKS DE JAVA SCRIPT -->
+	<script src="../view/js/logado.js"></script>
+	<script src="../view/js/zepto.min.js"></script>
+	<script src="../view/js/jquery-3.2.1.min.js"></script>
+	<script src="../view/js/bootstrap.min.js"></script>
+</body>
+</html>
